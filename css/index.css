@@ -6,10 +6,6 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-}
-
-html, body {
-  width: 1920px;
   margin: 0;
 }
 
@@ -131,6 +127,18 @@ header .head .down div ul li {
   padding: 5% 5%;
 }
 
+main .quick {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 68px;
+  height: 68px;
+}
+
+main .quick img {
+  width: 100%;
+}
+
 main .s1 {
   position: relative;
 }
@@ -146,7 +154,6 @@ main .s1 .slide-wrap .slide {
   top: 0;
   left: 0;
   width: 100%;
-  position: relative;
 }
 
 main .s1 .slide-wrap .slide:nth-of-type(2) .slide-text {
@@ -265,6 +272,13 @@ main .s1 .indi a {
 }
 
 main .s2 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main .s2 .s2-ani {
+  width: 100%;
   margin: 10% auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,21 +289,24 @@ main .s2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-main .s2 .s2-info p {
+main .s2 .s2-ani .s2-info p {
   padding-top: 3%;
   font-size: 32px;
   white-space: pre-line;
 }
 
-main .s2 .s2-img {
-  width: 535px;
-  height: 725px;
+main .s2 .s2-ani .s2-info p span {
+  font-weight: bold;
 }
 
-main .s2 .s2-img img {
-  width: 100%;
+main .s2 .s2-ani .s2-img img {
+  width: 535px;
+  height: 725px;
   border-radius: 20px;
 }
 

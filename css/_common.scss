@@ -5,8 +5,7 @@ $font : 'Noto Sans KR', sans-serif;
 
 // html{font-kerning: none;}
 *{box-sizing: border-box;}
-body{font-family: $font;}
-html,body{ width:1920px; margin: 0;}
+body{font-family: $font; margin: 0;}
 h1,h2,li,ul,p,b{ margin: 0; padding: 0;}
 ul,li{list-style-type: none;}
 a { text-decoration: none;}
