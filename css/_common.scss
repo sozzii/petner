@@ -8,15 +8,177 @@ $font : 'Noto Sans KR', sans-serif;
 body{font-family: $font; margin: 0;}
 h1,h2,li,ul,p,b{ margin: 0; padding: 0;}
 ul,li{list-style-type: none;}
-a { text-decoration: none;}
+a { text-decoration: none; color: #000;}
 img{vertical-align: middle;}
-header{
-    font-size: 24px;
-}
-h2{
-    font-size: 70px;
-}
+header{font-size: 24px;}
+h2{font-size: 70px;}
+hr{ width: 1678px;}
 
 // rgba(253, 206, 2, 1)  
 // rgba(4, 104, 183, 1)
 // rgba(1, 127, 53, 1)
+
+
+header{
+    
+    position: relative;
+    .head{
+        padding: 2% 6% ;
+        width: 100%;
+        background-color: rgba(255,255,255,0.6);
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        font-size: 30px;
+        
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        
+        .logo{
+            p{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .reservation{
+            display: inline-block;
+            width: 10%;
+        }
+        .nav{
+            width: 100%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                li{
+                    margin-left: 8% ;
+                }
+            }
+        }
+        .down{
+            position: absolute;
+            width: 100%;
+            left: 0%; top:100%;
+
+            text-align: center;
+            background-color: rgba(255,255,255,0.6);
+            font-size: 28px;
+            z-index: 999;
+
+            display: none;
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                ul{
+                    margin: 1% 0 2%;
+                    width: 10%;
+                    transform: translateX(46%);
+                    li{
+                        width: 100%;
+                        padding: 5% 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    height: 290px;
+    .foot{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        padding: 3% 0;
+        .footer-info{
+            p:nth-of-type(1){
+                img{
+                    width: 146px;
+                }
+            }
+            p:nth-of-type(2){
+                stroke:  #767676;
+                color: #3d3d3d;
+                font-size :20px;
+                white-space: pre-line;
+                line-height: 1.9rem;
+                padding-top: 1%;
+            }
+            margin-right: 20%;
+        }
+        .footer-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: inline-block;
+                margin-right: 10%;
+                img{
+                    width:40px ;
+                }
+            }
+        }
+    }
+}
+main{
+    position: relative;
+
+    //quick_menu
+    .quick{
+        position: fixed;
+        right: 5%;
+        bottom: 10%;
+        width: 68px;
+        height: 68px;
+        img{
+            width: 100%;
+        }
+    }
+    //tap_menu
+    .tab-menu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: absolute;
+        left: 11%; top: 200px;
+        z-index: 999;
+        a{
+            display: inline-block;
+            width: 120px; height: 40px;
+            background-color: #eee;
+            border-radius: 100px;
+            font-size: 20px;
+            text-align: center;
+            padding: 1% 0;
+            margin: 2.5%;
+        }
+    }
+    //quick_sub
+    .quick-sub{
+        position: fixed;
+        right: 0; top: 50%;
+        transform: translateY(-50%);
+        a{
+            display: inline-block;
+            width: 128px;
+            height: 67px;
+            background-color: rgba(253, 206, 2, 1) ;
+            color: #000;
+            font-size: 23px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
