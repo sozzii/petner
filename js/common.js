@@ -1,3 +1,7 @@
+//header, footer 연결
+$('header').load('inc.html .head');
+$('footer').load('inc.html footer');
+
 //header scroll down > background-color변경
 function scroll() {
     let headerscroll;
@@ -15,7 +19,30 @@ function scroll() {
 
 $(window).on('load', scroll);
 
+//top 섹션1부터 opacity1 
+function topscroll() {
+    let scrollTop;
+
+    $(window).on('scroll', function () {
+        scrollTop = $(window).scrollTop();
+
+        if (900 < scrollTop) {
+            $('main .quick').addClass('active');
+        } else {
+            $('main .quick').removeClass('active');
+        }
+    });
+}
+
+$(window).on('load', topscroll);
+
+//top 버튼 클릭 > top으로 올라가기
+$('main .quick').on('click', function () {
+    $('html').animate({ scrollTop: 0 }, 800);
+});
+
 //nav menu click > color 변경
+// menu click > scroll 이동
 
 
 //scroll 전체 섹션 하나씩 나타나기
@@ -39,24 +66,9 @@ function init() {
 
 $(window).on('load', init);
 
-// menu click > scroll 이동
 
+// sub1
 
-//visual slide
-function visual(){
-    $('.slide-wrap').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-}
-
-
-//top 섹션1부터 opacity1 
 function topscroll() {
     let scrollTop;
 
@@ -64,17 +76,16 @@ function topscroll() {
         scrollTop = $(window).scrollTop();
 
         if (900 < scrollTop) {
-            $('main .quick').addClass('active');
+            $('main .quick-sub').addClass('active');
         } else {
-            $('main .quick').removeClass('active');
+            $('main .quick-sub').removeClass('active');
         }
     });
 }
 
 $(window).on('load', topscroll);
 
-//top 버튼 클릭 > top으로 올라가기
-$('main .quick').on('click', function () {
+$('.quick-sub a:nth-of-type(4)').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
 });
 
