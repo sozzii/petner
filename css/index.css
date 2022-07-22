@@ -488,22 +488,22 @@ main .click.active {
 
 main .s1 {
   position: relative;
+  overflow: hidden;
 }
 
 main .s1 .slide-wrap {
-  position: relative;
   height: 1080px;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
 }
 
 main .s1 .slide-wrap .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  position: relative;
 }
 
 main .s1 .slide-wrap .slide:nth-of-type(2) .slide-text {
@@ -571,10 +571,6 @@ main .s1 .slide-wrap .slide:nth-of-type(3) .slide-text a {
   font-size: 30px;
 }
 
-main .s1 .slide-wrap .slide p img {
-  width: 100%;
-}
-
 main .s1 .slide-wrap .slide .slide-text {
   position: absolute;
   left: 50%;
@@ -608,7 +604,7 @@ main .s1 .arrow a:nth-of-type(2) {
   right: 3%;
 }
 
-main .s1 .indi {
+main .s1 .slick-dots {
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -616,12 +612,14 @@ main .s1 .indi {
           transform: translate(-50%);
 }
 
-main .s1 .indi a {
+main .s1 .slick-dots li button {
   display: inline-block;
   margin: 0 5px;
+  width: 32px;
+  height: 32px;
 }
 
-main .s1 .indi a.active {
+main .s1 .slick-dots a.active {
   background-color: #0066FF;
 }
 
@@ -632,19 +630,24 @@ main .s2 {
 
 main .s2 .s2-ani {
   width: 100%;
-  margin: 10% auto 0;
+  margin: 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-transform: translateX(-13%);
+          transform: translateX(-13%);
+}
+
+main .s2 .s2-ani .s2-info {
+  -webkit-transform: translate(50%, -180%);
+          transform: translate(50%, -180%);
+  width: 1400px;
 }
 
 main .s2 .s2-ani .s2-info p {
@@ -657,10 +660,31 @@ main .s2 .s2-ani .s2-info p span {
   font-weight: bold;
 }
 
+main .s2 .s2-ani .s2-img {
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 main .s2 .s2-ani .s2-img img {
   width: 535px;
   height: 725px;
   border-radius: 20px;
+}
+
+main .s2 .s2-ani .s2-img img:nth-of-type(1) {
+  -webkit-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+}
+
+main .s2 .s2-ani .s2-img img:nth-of-type(2) {
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+}
+
+main .s2 .s2-ani .s2-img img:nth-of-type(3) {
+  -webkit-transform: translate(100%, -200%);
+          transform: translate(100%, -200%);
 }
 
 main .s3 {
@@ -856,19 +880,43 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   padding: 17% 0;
 }
 
+.sub1-1 .sub1-1-info {
+  overflow: hidden;
+}
+
 .sub1-1 .sub1-1-info .sub1-1-text {
   margin: 0 auto;
   width: 68%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .sub1-1 .sub1-1-info .sub1-1-text h2 {
   color: #002D71;
+  -webkit-animation: textAni 1s forwards alternate;
+          animation: textAni 1s forwards alternate;
 }
 
 .sub1-1 .sub1-1-info .sub1-1-text p {
   white-space: pre-line;
   font-size: 32px;
   margin-top: 20px;
+  -webkit-animation: textAni .5s forwards alternate;
+          animation: textAni .5s forwards alternate;
+}
+
+@-webkit-keyframes textAni {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes textAni {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 
 .sub1-1 .sub1-1-info ul {
@@ -929,10 +977,20 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .sub1-2 {
   margin: 0 auto;
+  overflow: hidden;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .sub1-2 .sub2-1-text {
   text-align: center;
+  -webkit-animation: textAni .5s forwards alternate;
+          animation: textAni .5s forwards alternate;
+}
+
+.sub1-2 .sub2-1-text h2 {
+  -webkit-animation: textAni 1s forwards alternate;
+          animation: textAni 1s forwards alternate;
 }
 
 .sub1-2 .sub2-1-text p {
