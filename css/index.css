@@ -958,6 +958,10 @@ main .sub2 .sub2-1 ul li .sub2-1-menu2 {
   padding: 5% 6.5%;
 }
 
+main .sub2 .sub2-1 ul li .sub2-1-menu2:nth-of-type(1) {
+  display: none;
+}
+
 main .sub2 .sub2-1 ul li .sub2-1-menu2 div {
   font-weight: bold;
 }

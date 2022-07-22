@@ -522,6 +522,9 @@ main{
                         justify-content: flex-start;
                         align-items: flex-start;
                         padding: 5% 6.5%;
+                        &:nth-of-type(1){
+                            display: none;
+                        }
                         div{
                             font-weight: bold;
                             &:nth-of-type(1){
