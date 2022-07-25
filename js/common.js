@@ -20,13 +20,13 @@ function scroll() {
 $(window).on('load', scroll);
 
 //top 섹션1부터 opacity1 
-function topscroll() {
-    let scrollTop;
+function scrolltop() {
+    let  main_scrollTop;
 
     $(window).on('scroll', function () {
-        scrollTop = $(window).scrollTop();
+        main_scrollTop = $(window).scrollTop();
 
-        if (900 < scrollTop) {
+        if (900 < main_scrollTop) {
             $('main .quick').addClass('active');
         } else {
             $('main .quick').removeClass('active');
@@ -34,7 +34,7 @@ function topscroll() {
     });
 }
 
-$(window).on('load', topscroll);
+$(window).on('load', scrolltop);
 
 //top 버튼 클릭 > top으로 올라가기
 $('main .quick').on('click', function () {
@@ -70,12 +70,12 @@ $(window).on('load', init);
 // sub1
 
 function topscroll() {
-    let scrollTop;
+    let sub_scrollTop;
 
     $(window).on('scroll', function () {
-        scrollTop = $(window).scrollTop();
+        sub_scrollTop = $(window).scrollTop();
 
-        if (900 < scrollTop) {
+        if (900 < sub_scrollTop) {
             $('main .quick-sub').addClass('active');
         } else {
             $('main .quick-sub').removeClass('active');
