@@ -233,6 +233,10 @@ main .tab-menu a:hover {
   transition: .5s;
 }
 
+main .tab_reserv {
+  margin: 10% 13% 3%;
+}
+
 main .quick-sub {
   position: fixed;
   right: 0;
@@ -1368,15 +1372,20 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .reserv {
   margin: 0% 15%;
+  overflow: hidden;
 }
 
-.reserv h1 {
+.reserv h1.ani {
   font-size: 50px;
+  -webkit-animation: textAni 1s forwards alternate;
+          animation: textAni 1s forwards alternate;
 }
 
-.reserv p {
-  margin: 20px 0;
+.reserv p.ani {
+  margin: 2px 0;
   font-size: 25px;
+  -webkit-animation: textAni .5s forwards alternate;
+          animation: textAni .5s forwards alternate;
 }
 
 .reserv .s5-button {
@@ -1419,6 +1428,10 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .reserv .s5-button a:nth-of-type(2) {
   background-color: #002D71;
+}
+
+.reserv .s5-button p {
+  font-size: 24px;
 }
 
 .service {
@@ -1477,6 +1490,7 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .schedule {
   margin: 10% 15%;
+  position: relative;
 }
 
 .schedule .line {
@@ -1485,6 +1499,12 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   height: 1122px;
   margin: 30px auto;
   border-radius: 10px;
+}
+
+.schedule iframe {
+  position: absolute;
+  top: 14%;
+  left: 5%;
 }
 
 .schedule .notice {

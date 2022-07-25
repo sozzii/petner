@@ -842,13 +842,16 @@ main{
 //sub5 (reservation)
 .reserv{
     margin: 0% 15%;
+    overflow: hidden;
 
-    h1{
+    h1.ani{
         font-size: 50px;
+        animation: textAni 1s forwards alternate;
     }
-    p{
-        margin: 20px 0;
+    p.ani{
+        margin: 2px 0;
         font-size: 25px;
+        animation: textAni .5s forwards alternate;
     }
     .s5-button{
         display: flex;
@@ -875,6 +878,9 @@ main{
             &:nth-of-type(2){
             background-color:#002D71   ;
             }
+        }
+        p{
+            font-size: 24px;
         }
     }
 }
@@ -931,6 +937,7 @@ main{
 
 .schedule{
     margin:10% 15%;
+    position: relative;
 
     .line{
         border: 2px solid #002D71;
@@ -938,6 +945,12 @@ main{
         height: 1122px;
         margin: 30px auto;
         border-radius: 10px;
+    }
+
+    iframe{
+        position: absolute;
+        top: 14%;
+        left: 5%;
     }
 
     .notice{
