@@ -1,0 +1,72 @@
+
+*{
+    box-sizing: border-box;
+}
+p,h2{
+    padding: 0;
+    margin: 0;
+}
+
+.text{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.text h2{
+    font-size: 70px;
+}
+.text p{
+    font-size: 32px;
+    white-space: pre-line;
+}
+
+ul,li{
+    list-style: none;
+}
+ul{
+    text-align: center;
+}
+ul > li{
+    font-size: 20px;
+    line-height: 3rem;
+    text-align: left;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide{
+    border: 3px solid #000;
+    padding: 6% 3%;
+    margin-right: 5%;
+
+    border-radius: 30px;
+
+    position: relative;
+}
+.slide .arrow-wrap .arrow-top{
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 70px;
+
+}
+.slide .arrow-wrap .arrow-bottom{
+    position: absolute;
+    bootom: 0; right: 0;
+    font-size: 70px;
+    
+}
+
+.phone{
+    border: 3px solid #000;
+
+    border-radius: 30px;
+}
+.phone img{
+    width: 105%;
+    vertical-align: middle;
+    transform: translateX(-10px);
+}
