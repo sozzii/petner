@@ -849,7 +849,7 @@ main{
         animation: textAni 1s forwards alternate;
     }
     p.ani{
-        margin: 2px 0;
+        margin: 20px 0;
         font-size: 25px;
         animation: textAni .5s forwards alternate;
     }
@@ -897,7 +897,7 @@ main{
         border: 2px solid #002D71;
         display: inline-block;
         width: 1300px;
-        margin: 9% 0 0 0;
+        margin: 11% 0 0 0;
     transform: translateY(20%);
     }
 
@@ -937,20 +937,9 @@ main{
 
 .schedule{
     margin:10% 15%;
-    position: relative;
-
-    .line{
-        border: 2px solid #002D71;
-        width: 1435px;
-        height: 1122px;
-        margin: 30px auto;
-        border-radius: 10px;
-    }
 
     iframe{
-        position: absolute;
-        top: 14%;
-        left: 5%;
+        margin: 30px auto;
     }
 
     .notice{

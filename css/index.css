@@ -1382,7 +1382,7 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 }
 
 .reserv p.ani {
-  margin: 2px 0;
+  margin: 20px 0;
   font-size: 25px;
   -webkit-animation: textAni .5s forwards alternate;
           animation: textAni .5s forwards alternate;
@@ -1447,7 +1447,7 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   border: 2px solid #002D71;
   display: inline-block;
   width: 1300px;
-  margin: 9% 0 0 0;
+  margin: 11% 0 0 0;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
 }
@@ -1490,21 +1490,10 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .schedule {
   margin: 10% 15%;
-  position: relative;
-}
-
-.schedule .line {
-  border: 2px solid #002D71;
-  width: 1435px;
-  height: 1122px;
-  margin: 30px auto;
-  border-radius: 10px;
 }
 
 .schedule iframe {
-  position: absolute;
-  top: 14%;
-  left: 5%;
+  margin: 30px auto;
 }
 
 .schedule .notice {
