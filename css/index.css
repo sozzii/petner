@@ -199,6 +199,7 @@ main .quick img {
 }
 
 main .tab-menu {
+  margin: 200px 100px 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,9 +209,6 @@ main .tab-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  left: 11%;
-  top: 200px;
   z-index: 999;
 }
 
@@ -222,7 +220,7 @@ main .tab-menu a {
   border-radius: 100px;
   font-size: 20px;
   text-align: center;
-  padding: 1% 0;
+  padding: 5px;
   margin: 2.5%;
   color: #3d3d3d;
 }
@@ -877,7 +875,7 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .sub1-1 {
   position: relative;
-  padding: 17% 0;
+  padding: 0 0 17% 0;
 }
 
 .sub1-1 .sub1-1-info {
@@ -1366,5 +1364,159 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   z-index: 999;
   padding: 10% 0;
   border-radius: 20px;
+}
+
+.reserv {
+  margin: 0% 15%;
+}
+
+.reserv h1 {
+  font-size: 50px;
+}
+
+.reserv p {
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.reserv .s5-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserv .s5-button a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: #FFCD00;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 30px 0 0;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserv .s5-button a img {
+  width: 40px;
+  margin: 0 5px 0 0;
+}
+
+.reserv .s5-button a:nth-of-type(2) {
+  background-color: #002D71;
+}
+
+.service {
+  margin: 5% 15%;
+  position: relative;
+}
+
+.service h1 {
+  font-size: 24px;
+}
+
+.service span {
+  border: 2px solid #002D71;
+  display: inline-block;
+  width: 1300px;
+  margin: 9% 0 0 0;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.service ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+
+.service ul li {
+  width: 260px;
+  height: 200px;
+  font-size: 18px;
+  border: 2px solid #002D71;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 20px 0 0;
+  background-color: #fff;
+}
+
+.service ul li p {
+  border-radius: 5px 5px 0 0;
+  padding: 15px;
+}
+
+.service ul li p:nth-of-type(1) {
+  background-color: #002D71;
+  color: #fff;
+}
+
+.service ul li p:nth-of-type(2) {
+  color: #3d3d3d;
+  padding: 20px 0;
+}
+
+.schedule {
+  margin: 10% 15%;
+}
+
+.schedule .line {
+  border: 2px solid #002D71;
+  width: 1435px;
+  height: 1122px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.schedule .notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-transform: translateX(4%);
+          transform: translateX(4%);
+}
+
+.schedule .notice button {
+  color: #0066FF;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.schedule .notice .newPage a {
+  color: #333333;
+  margin: 0 0 0 20px;
+}
+
+.schedule .notice .newPage a:hover {
+  background-color: transparent;
 }
 /*# sourceMappingURL=index.css.map */
