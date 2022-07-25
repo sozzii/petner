@@ -1,3 +1,7 @@
+//header, footer 연결
+$('header').load('header.html .head');
+$('footer').load('footer.html .foot');
+
 //header scroll down > background-color변경
 function scroll() {
     let headerscroll;
