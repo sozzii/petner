@@ -121,3 +121,42 @@
 
 /*  */
 
+.slick2 .slick-prev,
+.slick2 .slick-next{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick2 .slick-prev {
+    color: #005AD0; 
+    left:30px; 
+    top: 50%;
+}
+
+.slick2 .slick-next {
+    color: #005AD0; 
+
+    right:auto; 
+    top: 50%;    
+    right:30px;
+}
+
+ /* dots */
+.slick2 .slick-dots {
+    position: absolute;
+    color: #002D71;
+    bottom: 0;
+}
+
+.slick2 .slick-dots .slick-active{
+    color: #005AD0;
+}
+
+.slick2 .slick-dots li button {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
