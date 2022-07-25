@@ -53,7 +53,7 @@ function init(){
     $(".sub2-1 .sub2-1-menu1").click(function() {
         $(this).next(".sub2-1 .sub2-1-menu2").stop().slideToggle(400); // : 1개
         $(this).toggleClass('on').siblings().removeClass('on');
-        $(this).next(".sub2-1 .sub2-1-menu2").siblings(".sub2-1 .sub2-1-menu2").slideUp(400); // 1개는 닫히고, 1개는 펼쳐짐
+        $(this).next(".sub2-1 .sub2-1-menu2").siblings(".sub2-1 .sub2-1-menu2").slideUp(); // 1개는 닫히고, 1개는 펼쳐짐
     });
 
     $(".sub2-2-list").click(function() {
@@ -63,24 +63,26 @@ function init(){
     //sub2_animation
     $(window).on('scroll',function(){
         scrollTop = $(window).scrollTop();
-        let shape = $('main .sub2').offset().top;
+        let shape = $("main .sub2").offset().top;
         if( shape+210 < scrollTop){
-            $('circle').addClass('active');
-            $('rect').addClass('active');
+            $("circle").addClass('active');
+            $("rect").addClass('active');
         }
     });
 
-    $('main .tab-menu a:nth-of-type(1)').on('click',function(){
-        $('sub1-1').offset().top;
-        posY = $('.click').eq(i).offset().top;
+    $(".button01").click(function(){
+        $(".button02").addClass('remove');
+        $(".button01").addClass('active');
+        $(".button02 p").addClass('remove');
+        $(".button01 p").addClass('active');
+    })
+    $(".button02").click(function(){
+        $(".button01").addClass('remove');
+        $(".button02").addClass('active');
+        $(".button01 p").addClass('remove');
+        $(".button02 p").addClass('active');
+    })
 
-        if (posY - winH < scrollTop) {
-            $('.click').eq(i).addClass('active');
-        }
-    })
-    $('main .tab-menu a:eq(2)').on('click',function(){
-        $('sub1-2').offset().top;
-    })
 
 }
 
