@@ -57,6 +57,9 @@ $('main .quick').on('click', function () {
 
 // sub Tabmenu click > scroll 이동
 
+$('.quick-sub a:nth-of-type(4)').on('click', function () {
+    $('html').animate({ scrollTop: 0 }, 800);
+});
 
 $('.tab-menu a, .quick-sub a').on('click', function () {
     event.preventDefault()
@@ -74,9 +77,6 @@ $('.tab-menu a, .quick-sub a').on('click', function () {
     }
 });
 
-$('.quick-sub a:nth-of-type(4)').on('click', function () {
-    $('html').animate({ scrollTop: 0 }, 800);
-});
 
 //menu click > 이동, 색상변경
 
