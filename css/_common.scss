@@ -90,6 +90,10 @@ header{
                 }
             }
         }
+
+        .nav a.active, .down a.active{
+            color: #0066FF;
+        }
     }
 }
 

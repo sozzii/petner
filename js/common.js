@@ -64,7 +64,7 @@ $('.quick-sub a:nth-of-type(4)').on('click', function () {
 $('.tab-menu a, .quick-sub a').on('click', function () {
     event.preventDefault()
     let idx = $(this).index();
-    let clickTop = $('.click').eq(idx).offset().top;
+    let clickTop = $('.subscroll').eq(idx).offset().top;
 
     $('html').animate({ scrollTop: clickTop }, 800);
 
@@ -73,12 +73,21 @@ $('.tab-menu a, .quick-sub a').on('click', function () {
     function update(n) {
         $('.tab-menu a').eq(idx).addClass('active');
         $('.quick-sub a').eq(idx).addClass('active');
-        $(`.tab-menu a:eq(${n}), .quick-sub:eq(${n})`).addClass('active');
+        $(`.tab-menu a:eq(${n}), .quick-sub a:eq(${n})`).addClass('active');
     }
 });
 
 
-//menu click > 이동, 색상변경
+//menu click > 색상 바뀜 유지
+$('.nav a, .down a').on('click',function(){
+    let idx = $(this).index();
+
+    menuColor(idx)
+
+    function menuColor(n) {
+    $(`.nav a:eq(${n}), .down a:eq(${n})`).addClass('active');
+    }
+});
 
 //scroll 전체 섹션 하나씩 나타나기
 function init() {
