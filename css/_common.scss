@@ -154,7 +154,7 @@ main{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        z-index: 999;
+        z-index: 9999;
 
         a{
             display: inline-block;
@@ -179,6 +179,17 @@ main{
     .tab_reserv{
         margin: 10% 13% 3%;
     }
+
+    .tab-menu a.active{
+        color: #fff;
+        background-color: #0066FF;
+    }
+
+    .quick-sub a.active{
+        background-color: #FFA800;
+        font-weight: bold;
+    }
+
 
     //quick_sub
     .quick-sub{
