@@ -126,22 +126,50 @@
 
     <script>
 
-        const elEx2_li = document.querySelectorAll('.board ul li');
         // li클릭시 class명 => active
+        const elEx2_li = document.querySelectorAll('.board ul li');
 
-        for(let i=0; i<elEx2_li.length; i++){
-            elEx2_li[i].addEventListener('click',function(){
-            console.log(i)
-            //    elEx2_li[0].classList.remove('active');
-            //    elEx2_li[1].classList.remove('active');
-            //    elEx2_li[2].classList.remove('active');
-            elEx2_li[i].classList.toggle('active');
+        // for(let i=0; i<elEx2_li.length; i++){
+        //     elEx2_li[i].addEventListener('click',function(){
+        //        elEx2_li[0].classList.remove('active');
+        //        elEx2_li[1].classList.remove('active');
+        //        elEx2_li[i].classList.remove('active');
+        //         elEx2_li[i].classList.toggle('active');
 
-            // classList - >add(),remove(),toggle()
+        //     classList - >add(),remove(),toggle()
+        //     });
+        // }
+
+            for(let i=0; i<elEx2_li.length; i++){
+                
+            }
+
+            elEx2_li[0].addEventListener('click',function(){
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.add('active');
             });
-        }
+            elEx2_li[1].addEventListener('click',function(){
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[1].classList.add('active');
+            });
+            elEx2_li[2].addEventListener('click',function(){
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[2].classList.add('active');
+            });
+            elEx2_li[3].addEventListener('click',function(){
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[3].classList.add('active');
+            });
 
-        if(elEx2_li[i].classList.contains('active')){
+        if(elEx2_li[1].classList.contains('active')){
             img.src = "img/up.png";
         }
         else{
