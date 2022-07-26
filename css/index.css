@@ -237,23 +237,18 @@ main .tab-menu a:hover {
   transition: .5s;
 }
 
-main .tab_reserv {
+main .tab-menu .tab_reserv {
   margin: 10% 13% 3%;
 }
 
-main .tab_reserv a {
+main .tab-menu .tab_reserv a {
   color: #fff;
   background-color: #0066FF;
 }
 
-main .tab-menu a.active {
+main .tab-menu .tab-menu a.active {
   color: #fff;
   background-color: #0066FF;
-}
-
-main .quick-sub a.active {
-  background-color: #FFA800;
-  font-weight: bold;
 }
 
 main .quick-sub {
@@ -312,6 +307,11 @@ main a:hover {
   font-weight: bold;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+main .quick-sub a.active {
+  background-color: #FFA800;
+  font-weight: bold;
 }
 
 header {
@@ -626,50 +626,27 @@ main .s1 .arrow a:nth-of-type(2) {
   right: 3%;
 }
 
-main .s1 .slick-dots {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
-main .s1 .slick-dots li button {
-  display: inline-block;
-  margin: 0 5px;
-  width: 32px;
-  height: 32px;
-}
-
-main .s1 .slick-dots a.active {
-  background-color: #0066FF;
-}
-
 main .s2 {
   position: relative;
   height: 100vh;
 }
 
 main .s2 .s2-ani {
-  width: 100%;
+  width: 70%;
   margin: 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(-13%, 5%);
-          transform: translate(-13%, 5%);
 }
 
 main .s2 .s2-ani .s2-info {
-  -webkit-transform: translate(50%, -185%);
-          transform: translate(50%, -185%);
-  width: 1400px;
+  width: 56%;
 }
 
 main .s2 .s2-ani .s2-info p {
@@ -685,27 +662,17 @@ main .s2 .s2-ani .s2-info p span {
 main .s2 .s2-ani .s2-img {
   -webkit-transition: .5s;
   transition: .5s;
+  position: relative;
+  width: 30%;
+  height: 600px;
 }
 
 main .s2 .s2-ani .s2-img img {
-  width: 535px;
-  height: 725px;
+  width: 100%;
   border-radius: 20px;
-}
-
-main .s2 .s2-ani .s2-img img:nth-of-type(1) {
-  -webkit-transform: translate(100%, 0%);
-          transform: translate(100%, 0%);
-}
-
-main .s2 .s2-ani .s2-img img:nth-of-type(2) {
-  -webkit-transform: translate(100%, -100%);
-          transform: translate(100%, -100%);
-}
-
-main .s2 .s2-ani .s2-img img:nth-of-type(3) {
-  -webkit-transform: translate(100%, -200%);
-          transform: translate(100%, -200%);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 main .s3 {
