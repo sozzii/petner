@@ -19,6 +19,19 @@ function scroll() {
 
 $(window).on('load', scroll);
 
+//visual slide
+function visual() {
+    $('.slide-wrap').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+}
+
 //top 섹션1부터 opacity1 
 function scrolltop() {
     let  main_scrollTop;
@@ -41,9 +54,31 @@ $('main .quick').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
 });
 
-//nav menu click > color 변경
-// menu click > scroll 이동
 
+// sub Tabmenu click > scroll 이동
+
+
+$('.tab-menu a, .quick-sub a').on('click', function () {
+    event.preventDefault()
+    let idx = $(this).index();
+    let clickTop = $('.click').eq(idx).offset().top;
+
+    $('html').animate({ scrollTop: clickTop }, 800);
+
+    update(idx)
+
+    function update(n) {
+        $('.tab-menu a').eq(idx).addClass('active');
+        $('.quick-sub a').eq(idx).addClass('active');
+        $(`.tab-menu a:eq(${n}), .quick-sub:eq(${n})`).addClass('active');
+    }
+});
+
+$('.quick-sub a:nth-of-type(4)').on('click', function () {
+    $('html').animate({ scrollTop: 0 }, 800);
+});
+
+//menu click > 이동, 색상변경
 
 //scroll 전체 섹션 하나씩 나타나기
 function init() {
@@ -85,7 +120,5 @@ function topscroll() {
 
 $(window).on('load', topscroll);
 
-$('.quick-sub a:nth-of-type(4)').on('click', function () {
-    $('html').animate({ scrollTop: 0 }, 800);
-});
+
 

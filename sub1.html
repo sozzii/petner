@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>sub1</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./js/common.js"></script>
 
     <link href="css/index.css" rel="stylesheet">
 </head>
+
 <body>
     <header></header>
 
     <main>
         <div class="quick-sub">
-            <a href="">의료진</a>
-            <a href="">협력업체</a>
-            <a href="">위치</a>
-            <a href="">위로가기</a>
+            <a class="active">의료진</a>
+            <a>협력업체</a>
+            <a>위치</a>
+            <a>위로가기</a>
         </div>
 
         <div class="tab-menu">
-            <a href="">의료진</a>
-            <a href="">협력업체</a>
-            <a href="">위치</a>
+            <a class="active">의료진</a>
+            <a>협력업체</a>
+            <a>위치</a>
         </div>
 
         <div class="sub1">
-            <div class="sub1-1">
+            <div class="sub1-1 click">
                 <div class="sub1-1-info">
                     <div class="sub1-1-text">
                         <h2>믿음직한 의료진</h2>
@@ -51,7 +53,7 @@
                             <p>김지수 수의사</p>
                             <p>충북대학교 수의과대학 수의학과 학사 졸업
                                 충북대학교 수의과대학 임상수의학 대학원 졸업</p>
-                        </li>                    
+                        </li>
                         <li>
                             <p><img src="./img/main_section2_3.jpg" alt=""></p>
                             <p>고년차 수의사</p>
@@ -118,30 +120,32 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </main>
-    <hr>
+
     <footer></footer>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8c37465f6661e37b7d6ac281ffd408e"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8c37465f6661e37b7d6ac281ffd408e"></script>
     <script>
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
-                center: new kakao.maps.LatLng(37.499911, 127.040470), //지도의 중심좌표.
-                level: 1 //지도의 레벨(확대, 축소 정도)
-                };
+            center: new kakao.maps.LatLng(37.499911, 127.040470), //지도의 중심좌표.
+            level: 1 //지도의 레벨(확대, 축소 정도)
+        };
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-    
+
         // 마커가 표시될 위치입니다     
-        var markerPosition = new kakao.maps.LatLng(37.499911, 127.040470);     
-        
+        var markerPosition = new kakao.maps.LatLng(37.499911, 127.040470);
+
         // 마커를 생성합니다    
-        var marker = new kakao.maps.Marker({        
-        position: markerPosition    });    
-        
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
         // 마커가 지도 위에 표시되도록 설정합니다    
         marker.setMap(map);
     </script>
 </body>
+
 </html>
