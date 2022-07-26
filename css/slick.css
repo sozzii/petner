@@ -143,20 +143,4 @@
     right:30px;
 }
 
- /* dots */
-.slick2 .slick-dots {
-    position: absolute;
-    color: #002D71;
-    bottom: 0;
-}
-
-.slick2 .slick-dots .slick-active{
-    color: #005AD0;
-}
-
-.slick2 .slick-dots li button {
-    background-color: transparent;
-    border: none;
-    width: 32px;
-    height: 32px;
-}
+/* dots > slick-theme.css*/

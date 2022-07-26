@@ -178,24 +178,19 @@ main{
             background-color: #0066FF;
             transition: .5s;
         }
-    }
 
-    .tab_reserv{
-        margin: 10% 13% 3%;
-        a{
+        .tab_reserv{
+            margin: 10% 13% 3%;
+            a{
+                color: #fff;
+                background-color: #0066FF;
+            }
+        }
+    
+        .tab-menu a.active{
             color: #fff;
             background-color: #0066FF;
         }
-    }
-
-    .tab-menu a.active{
-        color: #fff;
-        background-color: #0066FF;
-    }
-
-    .quick-sub a.active{
-        background-color: #FFA800;
-        font-weight: bold;
     }
 
 
@@ -240,5 +235,10 @@ main{
         background-color: #FFA800;
         font-weight: bold;
         transition: .5s;
+    }
+
+    .quick-sub a.active{
+        background-color: #FFA800;
+        font-weight: bold;
     }
 }
