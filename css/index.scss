@@ -948,10 +948,10 @@ main{
         align-items: center;
         font-weight: bold;
         font-size: 24px;
-        transform: translateX(4%);
+        transform: translateX(1%);
 
         button{
-            color: #0066FF;
+            color: #333333;
             border: none;
             background-color: transparent;
             font-size: 24px;
@@ -967,6 +967,10 @@ main{
             a:hover{
                 background-color: transparent;
             }
+        }
+
+        button:hover, .newPage a:hover{
+            color: #0066FF;
         }
     }
 }

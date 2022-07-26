@@ -154,7 +154,7 @@ main{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        z-index: 9999;
+        
 
         a{
             display: inline-block;
@@ -178,6 +178,10 @@ main{
 
     .tab_reserv{
         margin: 10% 13% 3%;
+        a{
+            color: #fff;
+            background-color: #0066FF;
+        }
     }
 
     .tab-menu a.active{
@@ -198,6 +202,7 @@ main{
         transform: translateY(-50%);
         opacity: 0;
         transition: 1s;
+        z-index: 9999;
 
         a{
             display: inline-block;

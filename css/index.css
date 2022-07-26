@@ -209,7 +209,6 @@ main .tab-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 9999;
 }
 
 main .tab-menu a {
@@ -237,6 +236,11 @@ main .tab_reserv {
   margin: 10% 13% 3%;
 }
 
+main .tab_reserv a {
+  color: #fff;
+  background-color: #0066FF;
+}
+
 main .tab-menu a.active {
   color: #fff;
   background-color: #0066FF;
@@ -256,6 +260,7 @@ main .quick-sub {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 9999;
 }
 
 main .quick-sub a {
@@ -1518,12 +1523,12 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
           align-items: center;
   font-weight: bold;
   font-size: 24px;
-  -webkit-transform: translateX(4%);
-          transform: translateX(4%);
+  -webkit-transform: translateX(1%);
+          transform: translateX(1%);
 }
 
 .schedule .notice button {
-  color: #0066FF;
+  color: #333333;
   border: none;
   background-color: transparent;
   font-size: 24px;
@@ -1537,5 +1542,9 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .schedule .notice .newPage a:hover {
   background-color: transparent;
+}
+
+.schedule .notice button:hover, .schedule .notice .newPage a:hover {
+  color: #0066FF;
 }
 /*# sourceMappingURL=index.css.map */
