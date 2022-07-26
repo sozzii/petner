@@ -32,9 +32,29 @@ function visual() {
     });
 }
 
-//top 섹션1부터 opacity1 
+//main staff fadeIn-fadeOut
+// let now = 0;
+// let img = 3;
+// $('.s2 .s2-img img').eq(0).siblings().hide();
+
+// function staffFade() {
+//     if (now == img) {
+//         $('.s2 .s2-img img').eq(now).fadeOut(1000);
+//         $('.s2 .s2-img img').eq(0).fadeIn(1000);
+//         now = 0;
+//     }
+//     else {
+//         $('.s2 .s2-img img').eq(now).fadeOut(1000);
+//         $('.s2 .s2-img img').eq(now + 1).fadeIn(1000);
+//         now++;
+//     }
+// }
+// setInterval(staffFade, 3000);
+
+
+//main top opacity 0, 섹션1부터 opacity1 
 function scrolltop() {
-    let  main_scrollTop;
+    let main_scrollTop;
 
     $(window).on('scroll', function () {
         main_scrollTop = $(window).scrollTop();
@@ -49,13 +69,13 @@ function scrolltop() {
 
 $(window).on('load', scrolltop);
 
-//top 버튼 클릭 > top으로 올라가기
+//main top 버튼 클릭 > top으로 올라가기
 $('main .quick').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
 });
 
 
-// sub Tabmenu click > scroll 이동
+// sub tabMenu click > scroll 이동
 
 $('.quick-sub a:nth-of-type(4)').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
@@ -78,18 +98,7 @@ $('.tab-menu a, .quick-sub a').on('click', function () {
 });
 
 
-//menu click > 색상 바뀜 유지
-$('.nav a, .down a').on('click',function(){
-    let idx = $(this).index();
-
-    menuColor(idx)
-
-    function menuColor(n) {
-    $(`.nav a:eq(${n}), .down a:eq(${n})`).addClass('active');
-    }
-});
-
-//scroll 전체 섹션 하나씩 나타나기
+//main, sub > scroll 섹션 하나씩 나타나기
 function init() {
     let posY;
     let winH = $(window).height();
@@ -111,7 +120,7 @@ function init() {
 $(window).on('load', init);
 
 
-// sub1
+// sub quickMenu
 
 function topscroll() {
     let sub_scrollTop;
