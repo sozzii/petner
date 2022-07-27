@@ -8,20 +8,19 @@ $font : 'Noto Sans KR', sans-serif;
 body{font-family: $font; margin: 0;}
 h1,h2,li,ul,p,b{ margin: 0; padding: 0;}
 ul,li{list-style-type: none;}
-a { text-decoration: none;}
+a { text-decoration: none; color: #000;}
 img{vertical-align: middle;}
-header{
-    font-size: 24px;
-}
-h2{
-    font-size: 70px;
-}
+header{font-size: 24px;}
+h2{font-size: 70px;}
+hr{ width: 1678px;}
 
 // rgba(253, 206, 2, 1)  
 // rgba(4, 104, 183, 1)
 // rgba(1, 127, 53, 1)
 
+
 header{
+    
     position: relative;
     .head{
         padding: 2% 6% ;
@@ -43,6 +42,13 @@ header{
                 img{
                     width: 100%;
                 }
+                &:nth-of-type(1){
+                    transform: translateY(20px);
+                }
+                &:nth-of-type(2){
+                    transform: translateY(-30px);
+                    opacity: 0;
+                }
             }
         }
         .reservation{
@@ -61,7 +67,6 @@ header{
                 }
             }
         }
-
         .down{
             position: absolute;
             width: 100%;
@@ -86,26 +91,54 @@ header{
                     li{
                         width: 100%;
                         padding: 5% 5%;
+                        font-weight: lighter;
+                        a{
+                            font-weight: lighter;
+                        }
                     }
                 }
             }
         }
-
-        .nav a.active, .down a.active{
+        
+        a{
+            color: #3d3d3d;
+            font-weight: bold;
+        }
+        a:hover{
             color: #0066FF;
         }
     }
 }
+header .head:hover .down{
+    display: block;
+}
 
+header .head.active{
+    background-color: #002D71;    
+    transition: 1s;
+}
+
+header .head.active .nav a, 
+header .head.active .reservation{
+    color: #fff;
+}
+
+header .head.active .nav a:hover{
+    color: #0066FF;
+}
+
+header .head.active .logo .active{
+    opacity: 1;
+}
+
+//footer
 footer{
     height: 290px;
-
     .foot{
         display: flex;
         justify-content: space-around;
         align-items:center;
         padding: 3% 0;
-
         .footer-info{
             p:nth-of-type(1){
                 img{
@@ -136,7 +169,6 @@ footer{
         }
     }
 }
-
 main{
     position: relative;
 
@@ -147,19 +179,30 @@ main{
         bottom: 10%;
         width: 68px;
         height: 68px;
+
+        z-index: 99;
+        opacity: 0;
+        transition: .5s;
+
         img{
             width: 100%;
         }
     }
 
+    .quick.active{
+        opacity: 1;
+        transition: .5s;
+    }
+
     //tap_menu
     .tab-menu{
-        margin: 200px 100px 0 100px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        
 
+        position: absolute;
+        left: 12%; top: 300px;
+        z-index: 999;
         a{
             display: inline-block;
             width: 120px; height: 40px;
@@ -167,34 +210,16 @@ main{
             border-radius: 100px;
             font-size: 20px;
             text-align: center;
-            padding: 5px;
+            padding: 1% 0;
             margin: 2.5%;
-            color: #404040;
-        }
-
-        a.active,
-        a:hover{
-            color: #fff;
-            background-color: #0066FF;
-            transition: .5s;
-        }
-    
-        .tab_reserv a{
-            color: #fff;
-            background-color: #0066FF;
         }
     }
-
-
     //quick_sub
     .quick-sub{
         position: fixed;
         right: 0; top: 50%;
         transform: translateY(-50%);
-        opacity: 0;
-        transition: 1s;
         z-index: 9999;
-
         a{
             display: inline-block;
             width: 128px;
@@ -216,21 +241,5 @@ main{
                 border-bottom-right-radius:8px ;
             }
         }
-    }
-
-    .quick-sub.active{
-        opacity: 1;
-        transition: 1s;
-    }
-
-    a:hover{
-        background-color: #FFA800;
-        font-weight: bold;
-        transition: .5s;
-    }
-
-    .quick-sub a.active{
-        background-color: #FFA800;
-        font-weight: bold;
     }
 }
