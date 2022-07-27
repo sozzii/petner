@@ -133,6 +133,7 @@ function topscroll() {
 
 $(window).on('load', topscroll);
 
+/*
 //sub2_accordion menu
 $(".sub2-1 .sub2-1-menu1").click(function() {
     $(this).next(".sub2-1 .sub2-1-menu2").stop().slideToggle(400); // : 1개
@@ -182,9 +183,8 @@ $(".slide:nth-of-type(1) li").click(function(){
     $('.slide:nth-of-type(1) li').removeClass('active');
 })
 
-}
 
 $(window).on('load',init);
-
+*/
 
 
