@@ -130,14 +130,12 @@
 }
 
 .slick2 .slick-prev {
-    color: #005AD0; 
     left:30px; 
     top: 50%;
 }
 
-.slick2 .slick-next {
-    color: #005AD0; 
 
+.slick2 .slick-next {
     right:auto; 
     top: 50%;    
     right:30px;

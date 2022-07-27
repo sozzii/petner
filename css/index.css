@@ -226,7 +226,7 @@ main .tab-menu a {
   text-align: center;
   padding: 5px;
   margin: 2.5%;
-  color: #3d3d3d;
+  color: #404040;
 }
 
 main .tab-menu a.active,
@@ -237,16 +237,7 @@ main .tab-menu a:hover {
   transition: .5s;
 }
 
-main .tab-menu .tab_reserv {
-  margin: 10% 13% 3%;
-}
-
 main .tab-menu .tab_reserv a {
-  color: #fff;
-  background-color: #0066FF;
-}
-
-main .tab-menu .tab-menu a.active {
   color: #fff;
   background-color: #0066FF;
 }
@@ -669,6 +660,7 @@ main .s2 .s2-ani .s2-img {
 
 main .s2 .s2-ani .s2-img img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
   position: absolute;
   left: 0;

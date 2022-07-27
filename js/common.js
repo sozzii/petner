@@ -39,17 +39,17 @@ $('.s2 .s2-img img').eq(0).siblings().hide();
 
 function staffFade() {
     if (now == img) {
-        $('.s2 .s2-img img').eq(now).fadeOut(800);
-        $('.s2 .s2-img img').eq(0).fadeIn(800);
+        $('.s2 .s2-img img').eq(now).fadeOut(1000);
+        $('.s2 .s2-img img').eq(0).fadeIn(1000);
         now = 0;
     }
     else {
-        $('.s2 .s2-img img').eq(now).fadeOut(800);
-        $('.s2 .s2-img img').eq(now + 1).fadeIn(800);
+        $('.s2 .s2-img img').eq(now).fadeOut(1000);
+        $('.s2 .s2-img img').eq(now + 1).fadeIn(1000);
         now++;
     }
 }
-setInterval(staffFade, 2000);
+setInterval(staffFade, 3000);
 
 
 //main top opacity 0, 섹션1부터 opacity1 
@@ -75,7 +75,7 @@ $('main .quick').on('click', function () {
 });
 
 
-// sub tabMenu click > scroll 이동
+// sub tabMenu click > scroll 이동, tabMenu indi active 현위치 표시
 
 $('.quick-sub a:nth-of-type(4)').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
@@ -85,11 +85,13 @@ $('.tab-menu a, .quick-sub a').on('click', function () {
     event.preventDefault()
     let idx = $(this).index();
     let clickTop = $('.subscroll').eq(idx).offset().top - 200;
+    // let clickTopElse = $('.subscroll').eq(0).offset().top; 
 
-    // if(idx > 0){
+    // if(idx){
     //     clickTop
     // } else{
-    //     $('.subscroll').eq(0).offset().top(0);
+    //     clickTopElse
+    //     $('html').animate({ scrollTop: 0 }, 800);
     // }
 
     $('html').animate({ scrollTop: clickTop }, 800);
