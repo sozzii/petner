@@ -901,25 +901,25 @@ main{
                 align-items: center;
                 .sub3-2-slide{
                     border: 5px solid #002D71;
-                    padding: 6% 1%;
+                    // padding: 6% 1%;
                     margin-right: 5%;
                     width: 50%;
                     height: 730px;
                     border-radius: 50px;
                     position: relative;
-                    ul{
-                        text-align: center;
-                        padding: 100px 0;
-                        li{
-                            font-size: 28px;
-                            line-height: 3.5rem;
-                            text-align: left;
-                            &:nth-of-type(3){
-                                font-weight: bold;
-                                font-size: 32px;
-                            }
-                        }
-                    }
+                    // ul{
+                    //     text-align: center;
+                    //     padding: 100px 0;
+                    //     // li{
+                    //     //     font-size: 25px;
+                    //     //     line-height: 3.5rem;
+                    //     //     text-align: left;
+                    //     //     &:nth-of-type(3){
+                    //     //         font-weight: bold;
+                    //     //         font-size: 32px;
+                    //     //     }
+                    //     // }
+                    // }
                     .arrow-wrap{
                         .arrow-top{
                             position: absolute;
@@ -934,19 +934,17 @@ main{
                 .phone{
                     width: 20%;
                     height: 750px;
-                    position: relative;
+                    background-image: url(../img/p_0.png);
+                    background-repeat: no-repeat;
+                    // position: relative;
                     p{
-                        position: absolute;
-                        top: 0; left: 0;
-                        &:nth-of-type(1){
-                            z-index: -99;
-                        }
+                        // position: absolute;
+                        // top: 0; left: 0;
                         img{
                             width: 100%;
                             vertical-align: middle;
                         }
                     }
-
                 }
             }
         }

@@ -1142,25 +1142,11 @@ main .sub3 .sub3-2 .sub3-2-list {
 }
 main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide {
   border: 5px solid #002D71;
-  padding: 6% 1%;
   margin-right: 5%;
   width: 50%;
   height: 730px;
   border-radius: 50px;
   position: relative;
-}
-main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide ul {
-  text-align: center;
-  padding: 100px 0;
-}
-main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide ul li {
-  font-size: 28px;
-  line-height: 3.5rem;
-  text-align: left;
-}
-main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide ul li:nth-of-type(3) {
-  font-weight: bold;
-  font-size: 32px;
 }
 main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide .arrow-wrap .arrow-top {
   position: absolute;
@@ -1175,15 +1161,8 @@ main .sub3 .sub3-2 .sub3-2-list .sub3-2-slide .arrow-wrap .arrow-bottom {
 main .sub3 .sub3-2 .sub3-2-list .phone {
   width: 20%;
   height: 750px;
-  position: relative;
-}
-main .sub3 .sub3-2 .sub3-2-list .phone p {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-main .sub3 .sub3-2 .sub3-2-list .phone p:nth-of-type(1) {
-  z-index: -99;
+  background-image: url(../img/p_0.png);
+  background-repeat: no-repeat;
 }
 main .sub3 .sub3-2 .sub3-2-list .phone p img {
   width: 100%;
