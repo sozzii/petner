@@ -121,3 +121,24 @@
 
 /*  */
 
+.slick2 .slick-prev,
+.slick2 .slick-next{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick2 .slick-prev {
+    left:30px; 
+    top: 50%;
+}
+
+
+.slick2 .slick-next {
+    right:auto; 
+    top: 50%;    
+    right:30px;
+}
+
+/* dots > slick-theme.css*/
