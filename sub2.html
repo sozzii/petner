@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,13 @@
 
     <title>sub2</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script defer src="./js/common.js"></script>
 
     <link href="css/index.css" rel="stylesheet">
 </head>
-
 <body>
+
     <header></header>
 
     <main>
@@ -24,34 +23,45 @@
             <a>예방접종</a>
             <a>위로가기</a>
         </div>
-
+        
         <div class="tab-menu">
             <a class="active">종합검진</a>
-            <a>단과검진</a>
-            <a>예방접종</a>
+            <a >단과검진</a>
+            <a >예방접종</a>
         </div>
-
+        
         <div class="sub2">
-            <svg width="100%" height="1000">
-                <circle width="56px" height="56px" cx="81" cy="351" r="30" fill="#017F40" stroke="none" stroke-width="0"
-                    class="svgCircle1">
-                </circle>
-                <circle width="56px" height="56px" cx="121" cy="435" r="40" fill="#0066FF" stroke="none"
-                    stroke-width="0" class="svgCircle2">
-                </circle>
-                <rect x="80" y="420" rx="0" width="72" height="18" fill="#FFE600">
-                </rect>
-                <rect x="85%" y="150" rx="0" width="72" height="18" fill="#FFE600">
-                </rect>
-                <rect x="86%" y="250" rx="0" width="72" height="18" fill="#017F40" class="greenBar">
-                </rect>
-                <rect x="50" y="80%" rx="0" width="72" height="18" fill="#0066FF" class="blueBar">
-                </rect>
-                <rect x="150" y="82%" rx="0" width="72" height="18" fill="#FFE600">
-                </rect>
+            <svg width="100%" height="100%">
+                <circle 
+                    width="56px" height="56px"
+                    cx="70" 
+                    cy="500" 
+                    r="30" 
+                    fill="#017F40"
+                    stroke="none"
+                    stroke-width="0"
+                    class="svgCircle1"></circle>
+                <circle
+                    width="56px" height="56px"
+                    cx="140" 
+                    cy="550"  
+                    r="40" 
+                    fill="#0066FF"
+                    stroke="none"
+                    stroke-width="0"
+                    class="svgCircle2"></circle>
+                <rect 
+                    x="100" y="550" rx="0" width="72" height="18" fill="#FFE600" transform="translate(65,180) rotate(-30)" ></rect>       
+                <rect 
+                    x="85%" y="300" rx="0" width="72" height="18" fill="#FFCD00" transform="translate(140,780) rotate(-50)" ></rect>  
+                <rect 
+                    x="50" y="30%" rx="0" width="72" height="18" fill="#0066FF" transform="translate(120,680) rotate(-10)" class="blueBar"></rect>
+                <rect 
+                    x="85%" y="400" rx="0" width="72" height="18" fill="#017F40" transform="translate(1680,150) rotate(-28)" class="greenBar"></rect>
+                <rect 
+                    x="150" y="30%" rx="0" width="72" height="18" fill="#FFCD00" transform="translate(1670,80) rotate(-50)" ></rect>
             </svg>
-
-            <div class="sub2-1">
+            <div class="sub2-1 subscroll">
                 <div class="sub2-1-text">
                     <h2>이 모든 구성을
                         파격적인 가격으로 만나보세요!</h2>
@@ -65,48 +75,8 @@
                                 너를 알고 싶어</p>
                             <p>반려견의 몸 상태를 전반적으로 체크할 수 있는 다양한 검사 항목으로 구성되어 있어요.</p>
                             <p><img src="./img/sub2_icon1.png" alt=""></p>
-                            <div class="triangle"></div>
-                        </div>
-                        <div class="sub2-1-menu2">
-                            <div>
-                                <p>검진항목</p>
-                                <p>
-                                    1.기본 신체 검사
-                                    2.항체가 검사(2종)
-                                    3.심장사상충 검사(자충, 성충 검사)
-                                    4.혈압
-                                    5.심전도
-                                    6.기본 안과검사
-                                    7.흉부 X-ray 검사
-                                    8.복부 X-ray 검사
-                                    9.고관절 X-ray 검사
-                                    10.복부 초음파
-                                    11.분변
-                                    12.소변 검사
-                                    13.혈구 검사
-                                    14.혈청 화학 검사(17종)
-                                    15.전해질 검사
-                                </p>
-                            </div>
-                            <div>
-                                <p>검진비용(vat 별도)</p>
-                                <p>
-                                    ~ 10kg : 365,000원
-                                    ~ 20kg : 415,000원
-                                    ~ 25kg : 515,000원
-                                    ~ 30kg : 650,000원
-                                    30kg 이상 : 별도 문의
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="sub2-1-menu1 ">
-                            <p><span>골드</span>
-                                더 챙겨주고 싶어</p>
-                            <p>좀 더 디테일한 검사를 원하셔서 심장과 신장 검사 항목을 추가했어요.</p>
-                            <p><img src="./img/sub2_icon2.png" alt=""></p>
-                            <div class="triangle"></div>
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
                         </div>
                         <div class="sub2-1-menu2">
                             <div>
@@ -143,11 +113,12 @@
                     </li>
                     <li>
                         <div class="sub2-1-menu1">
-                            <p><span>프리미엄</span>
-                                널 지켜주고 싶어</p>
-                            <p>노령 반려견에게 적합한 항목으로 호르몬 검사, 염증 수치 검사가 포함되어 있어요.</p>
-                            <p><img src="./img/sub2_icon3.png" alt=""></p>
-                            <div class="triangle"></div>
+                            <p><span>골드</span>
+                                더 챙겨주고 싶어</p>
+                            <p>좀 더 디테일한 검사를 원하셔서 심장과 신장 검사 항목을 추가했어요.</p>
+                            <p><img src="./img/sub2_icon2.png" alt=""></p>
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
                         </div>
                         <div class="sub2-1-menu2">
                             <div>
@@ -177,7 +148,49 @@
                                     ~ 20kg : 415,000원
                                     ~ 25kg : 515,000원
                                     ~ 30kg : 650,000원
-                                    30kg 이상 : 별도 문의
+                                    30kg 이상 : 별도 문의 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sub2-1-menu1">
+                            <p><span>프리미엄</span>
+                                널 지켜주고 싶어</p>
+                            <p>노령 반려견에게 적합한 항목으로 호르몬 검사, 염증 수치 검사가 포함되어 있어요.</p>
+                            <p><img src="./img/sub2_icon3.png" alt=""></p>
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
+                        </div>
+                        <div class="sub2-1-menu2">
+                            <div>
+                                <p>검진항목</p>
+                                <p>
+                                    1.기본 신체 검사
+                                    2.항체가 검사(2종)
+                                    3.심장사상충 검사(자충, 성충 검사)
+                                    4.혈압
+                                    5.심전도
+                                    6.기본 안과검사
+                                    7.흉부 X-ray 검사
+                                    8.복부 X-ray 검사
+                                    9.고관절 X-ray 검사
+                                    10.복부 초음파
+                                    11.분변
+                                    12.소변 검사
+                                    13.혈구 검사
+                                    14.혈청 화학 검사(17종)
+                                    15.전해질 검사
+                                </p>
+                            </div>
+                            <div>
+                                <p>검진비용(vat 별도)</p>
+                                <p>
+                                    ~ 10kg : 365,000원
+                                    ~ 20kg : 415,000원
+                                    ~ 25kg : 515,000원
+                                    ~ 30kg : 650,000원
+                                    30kg 이상 : 별도 문의 
                                 </p>
                             </div>
                         </div>
@@ -185,8 +198,8 @@
                 </ul>
             </div>
 
-            <div class="sub2-2 click">
-                <div class="sub2-2-text ">
+            <div class="sub2-2 click subscroll" >
+                <div class="sub2-2-text">
                     <h2>단과검진</h2>
                     <p>기본 검사 외에 다른 옵션들을 살펴보세요.</p>
                 </div>
@@ -194,23 +207,22 @@
                     <li>
                         <div class="sub2-2-list">심장 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p>심장 검사 패키지
-                                흉부 X-ray, 심전도, 심장초음파,
+                            <p><span>심장 검사 패키지</span>
+                                흉부 X-ray, 심전도, 심장초음파, 
                                 심근기능 평가 인자 proBNP 검사
-                                초진 비용
+                                초진 비용 
                                 ~ 10kg : 300,000원
                                 ~ 20kg : 400,000원
                                 ~ 30kg : 500,000원
-                                재진 비용
+                                재진 비용 
                                 ~ 10kg : 250,000원
                                 ~ 20kg : 350,000원
                                 ~ 30kg : 450,
-
+                                
                             </p>
-                            <p>
-                                심장검사
+                            <p><span>심장검사</span>
                                 심장초음파, 심근기능 평가 인자 proBNP 검사
-                                검진 비용
+                                검진 비용 
                                 ~ 10kg : 250,000원
                                 ~ 20kg : 350,000원
                                 ~ 30kg : 450,000원
@@ -220,21 +232,18 @@
                     <li>
                         <div class="sub2-2-list">신장 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p>
-                                신장 검사 패키지
-                                BUN, Crea, IP, 전해질, SDMA, 뇨스틱, 뇨비중,
+                            <p><span>신장 검사 패키지</span>
+                                BUN, Crea, IP, 전해질, SDMA, 뇨스틱, 뇨비중, 
                                 단백뇨, 비뇨기(신장, 요관, 방관) 초음파 검사
-                                검진 비용
+                                검진 비용 
                                 ~ 10kg : 200,000원
                                 ~ 20kg : 250,000원
                                 ~ 30kg : 300,000원
                             </p>
-                            <p>
-                                신장 검사
+                            <p><span>신장 검사</span>
                                 SDMA, 단백뇨
                             </p>
-                            <p>
-                                검진 비용
+                            <p><span>검진 비용</span>
                                 ~ 30kg : 120,000원
                             </p>
                         </div>
@@ -242,12 +251,10 @@
                     <li>
                         <div class="sub2-2-list">갑상선 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p>
-                                갑상선 검사 패키지
+                            <p><span>갑상선 검사 패키지</span>
                                 T4, TSH, freeT4
                             </p>
-                            <p>
-                                검진 비용
+                            <p><span>검진 비용</span>
                                 ~ 30kg : 120,000원
                             </p>
                         </div>
@@ -255,8 +262,7 @@
                     <li>
                         <div class="sub2-2-list">부신 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p>
-                                부신 검사 패키지
+                                <p><span>부신 검사 패키지</span>
                                 검진 비용 (초음파 검사, ACTH ST)
                                 ~ 10kg : 150,000원
                                 ~ 20kg : 170,000원
@@ -268,54 +274,158 @@
                     </li>
                     <li>
                         <div class="sub2-2-list">소화기 검사 패키지</div>
-                        <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                        <div class="sub2-2-down">                            
+                            <p><span>소화기 검사 패키지 1</span>
+                                CPL, CRP, 소화기 PCR, Cobalamin, 
+                                Folate, 소화기 초음파
+                            </p>
+                            <p><span>초진 비용</span>
+                                ~ 10kg : 300,000원
+                                ~ 20kg : 350,000원
+                                ~ 30kg : 400,000원
+                            </p>
+                            <p><span>소화기 검사 패키지 2</span>
+                                CPL, CRP, 소화기 PCR, Cobalamin, Folate
+                            </p>
+                            <p><span>재진 비용</span>
+                                ~ 10kg : 250,000원
+                                ~ 20kg : 300,000원
+                                ~ 30kg : 350,000원
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="sub2-2-list">안과 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                            <p><span>안과 검사 패키지</span>
+                                안과 시진, 눈물량 평가, 각막 형광 염색, 안압
+                                검진 비용 
+                                ~ 30kg : 50,000원
+                            </p>
+                            <p><span>안과 검사</span>
+                                눈물량 평가, 각막 형광 염색
+                            </p>
+                            <p><span>검진 비용</span>
+                                ~ 30kg : 50,000원
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="sub2-2-list">고관절 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                            <p><span>고관절 검사 패키지</span>
+                                X-ray 3컷, 고관절 탈구 여부 판별
+                            </p>
+                            <p><span>검진 비용</span>
+                                ~ 10kg : 54,000원
+                                ~ 20kg : 75,000원
+                                ~ 30kg : 99,000원
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="sub2-2-list">슬관절 검사 패키지</div>
                         <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                            <p><span>슬관절 검사 패키지</span>
+                                X-ray 3컷, 슬개골 촉진 및 탈구 기수 판별
+                            </p>
+                            <p><span>검진 비용</span>
+                                ~ 10kg : 54,000원
+                                ~ 20kg : 75,000원
+                                ~ 30kg : 99,000원
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="sub2-2-list">감염병 PCR 검사</div>
                         <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                            <p><span>감염병 PCR 검사</span>
+                                검사 비용 
+                                건강검진 PCR : 160,000원
+                                호흡기 PCR    : 120,000원
+                                소화기 PCR    : 130,000원
+                                심장사상충, 진드기 매개질환 : 50,000원
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="sub2-2-list">알러지 패키지</div>
                         <div class="sub2-2-down">
-                            <p></p>
-                            <p></p>
+                            <p><span>알러지 패키지</span>
+                                검사 비용 
+                                BASIC test 54종 : 150,000원
+                                Premium test 127종 : 280,000원
+                                FOOD intensive test 108종 : 360,000원
+                                Premium inrensive test 127종 : 440,000원
+                            </p>
                         </div>
                     </li>
                 </ul>
             </div>
 
+            <div class="sub2-3 click subscroll">
+                <div class="sub2-3-text">
+                    <h2>예방접종</h2>
+                    <p>
+                        종합건강검진 시 포함된 항체가 검사 결과와
+                        수의사의 처방에 따라 반려견에게 필요한 예방접종이 제공돼요.
+                    </p>
+                </div>
+                <div class="sub2-3-list">
+                    <ul>
+                        <li>
+                            <p>
+                                <span>백신</span>
+                                종합백신 DHPP : 25,000원
+                                코로나백신        : 20,000원
+                                켄넬코프백신    : 20,000원
+                                인플루엔자백신 : 35,000원
+                                광견병백신        : 20,000원
+                            </p>
+                            <p>
+                                <span>연간 접종 패키지</span>
+                                연간 접종 패키지
+                                종합백신 DHPP, 코로나백신, 켄넬코프백신, 
+                                인플루엔자백신, 광견병 백신 - 각 1회
+                                비용 : 110,000원 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>강아지 초기 접종 패키지</span>
+                                종합백신 DHPP 5차,
+                                코로나백신 2차, 
+                                켄넬코프백신 2차, 
+                                인플루엔자백신 2차, 
+                                광견병 백신 1차
+                                비용 : 250,000원
+                            </p>
+                            <p>
+                                <span>동물 등록</span>
+                                내장형 : 35,000원
+                                외장형 : 45,000원
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>항체가 검사</span>
+                                2종 : 35,000원
+                                7종 : 70,000원
+                            </p>
+                            <p>
+                                <span>기타 검사</span>
+                                베를링턴테리어 구리중독 : 140,000원
+                                혈액형검사 : 50,000원
+                                종양종합지표검사 : 180,000원
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer></footer>
-
+    
 </body>
-
 </html>
