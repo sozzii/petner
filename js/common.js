@@ -2,6 +2,7 @@
 $('header').load('inc.html .head');
 $('footer').load('inc.html footer');
 
+
 //header scroll down > background-color변경
 function scroll() {
     let headerscroll;
@@ -69,10 +70,13 @@ function scrolltop() {
 
 $(window).on('load', scrolltop);
 
+
+
 //main top 버튼 클릭 > top으로 올라가기
 $('main .quick').on('click', function () {
     $('html').animate({ scrollTop: 0 }, 800);
 });
+
 
 
 // sub tabMenu click > scroll 이동, tabMenu indi active 현위치 표시
@@ -91,6 +95,7 @@ $('.tab-menu a, .quick-sub a').on('click', function () {
     $('.tab-menu a').removeClass('active').eq(idx).addClass('active');
     $('.quick-sub a').removeClass('active').eq(idx).addClass('active');
 });
+
 
 
 //main, sub > scroll 섹션 하나씩 나타나기
@@ -115,6 +120,7 @@ function init() {
 $(window).on('load', init);
 
 
+
 // sub quickMenu
 
 function topscroll() {
@@ -133,27 +139,17 @@ function topscroll() {
 
 $(window).on('load', topscroll);
 
-/*
 //sub2_accordion menu
-$(".sub2-1 .sub2-1-menu1").click(function() {
+$(".sub2-1 .sub2-1-menu1").click(function () {
     $(this).next(".sub2-1 .sub2-1-menu2").stop().slideToggle(400); // : 1개
     $(this).toggleClass('on').siblings().removeClass('on');
     $(this).next(".sub2-1 .sub2-1-menu2").siblings(".sub2-1 .sub2-1-menu2").slideUp(); // 1개는 닫히고, 1개는 펼쳐짐
 });
 
-$(".sub2-2-list").click(function() {
+$(".sub2-2-list").click(function () {
     alert('페이지 준비중입니다~!');
 });
 
-//sub2_animation
-$(window).on('scroll',function(){
-    scrollTop = $(window).scrollTop();
-    let shape = $("main .sub2").offset().top;
-    if( shape+210 < scrollTop){
-        $("circle").addClass('active');
-        $("rect").addClass('active');
-    }
-});
 
 // sub3 slide slick
 $(".slide:nth-of-type(1)").slick({
@@ -185,6 +181,6 @@ $(".slide:nth-of-type(1) li").click(function(){
 
 
 $(window).on('load',init);
-*/
+
 
 
