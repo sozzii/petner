@@ -461,11 +461,62 @@ main{
         }
     }
 
-    //sub2
+    
+// .sub2{
+//     position: relative;
+    
+//     svg{
+//         position: absolute;
+//         top: -15%;
+//         left: 50px;
+//         .svgCircle1{
+//             animation: svgCircle 2s infinite forwards alternate;
+//         }
+//         .svgCircle2{
+//             animation: svgCircle2 2s infinite forwards alternate;
+//         }
+//         rect{
+//             animation: svgBar 3s infinite forwards alternate;
+//         }
+//         .blueBar{
+//             animation: bottomBar 2s infinite forwards alternate;
+//         }
 
+//         .greenBar{
+//             animation: rightBar 2s infinite forwards alternate;
+//         }
+    
+//         @keyframes svgCircle{
+//             0%{transform: translate(0px);}
+//             100%{transform: translateY(5px);}
+//         }
+
+//         @keyframes svgCircle2{
+//             0%{transform: translate(0px);}
+//             100%{transform: translateY(-5px);}
+//         }
+
+//         @keyframes svgBar{
+//             0%{transform: rotate(4deg);}
+//             100%{transform: rotate(5deg);}
+//         }
+
+//         @keyframes bottomBar{
+//             0%{transform: rotate(-4deg);}
+//             100%{transform: rotate(-5deg);}
+//         }
+
+//         @keyframes rightBar{
+//             0%{transform: translateX(0px);}
+//             100%{transform: translateX(10px);}
+//         }
+//     }
+
+    //sub2
     .sub2{
         position: relative;
         padding: 22% 0 0;
+
         svg{
             position: absolute;
             z-index: -99;
@@ -541,6 +592,7 @@ main{
                 }
             }
         }
+
         .sub2-1{
             width: 75%;
             margin: 0 auto;
@@ -1047,6 +1099,13 @@ main{
     .button01 p.active{
         color: #fff;
         font-weight: bold;
+    }
+    .button div:hover{
+        font-weight: bold;
+        background-color: #0066FF;
+    }
+    .button div:hover p{
+        color: #fff !important;
     }
     .button02{
         width: 106px; height: 40px;
