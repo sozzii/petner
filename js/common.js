@@ -80,21 +80,30 @@ $('main .quick').on('click', function () {
 
 
 // sub tabMenu click > scroll 이동, tabMenu indi active 현위치 표시
+let clickTop=[];
+$('.subscroll').addClass('active');
 
-$('.quick-sub a:nth-of-type(4)').on('click', function () {
-    $('html').animate({ scrollTop: 0 }, 800);
-});
+setTimeout(function(){
+    $('.subscroll').each(function(){
+        clickTop.push( $(this).offset().top - 200 );
+    })
+    $('.subscroll').not(":first").removeClass('active');
+    $('.quick-sub a:nth-of-type(4)').on('click', function () {
+        $('html').animate({ scrollTop: 0 }, 800);
+    });
+    
+    $('.tab-menu a, .quick-sub a').on('click', function () {
+        event.preventDefault()
+        let idx = $(this).index();
+        
+    
+        $('html').animate({ scrollTop: clickTop[idx] }, 800);
+    
+        $('.tab-menu a').removeClass('active').eq(idx).addClass('active');
+        $('.quick-sub a').removeClass('active').eq(idx).addClass('active');
+    });
 
-$('.tab-menu a, .quick-sub a').on('click', function () {
-    event.preventDefault()
-    let idx = $(this).index();
-    let clickTop = $('.subscroll').eq(idx).offset().top - 200;
-
-    $('html').animate({ scrollTop: clickTop }, 800);
-
-    $('.tab-menu a').removeClass('active').eq(idx).addClass('active');
-    $('.quick-sub a').removeClass('active').eq(idx).addClass('active');
-});
+},1000)
 
 
 
@@ -118,8 +127,6 @@ function init() {
 }
 
 $(window).on('load', init);
-
-
 
 // sub quickMenu
 
@@ -179,8 +186,9 @@ $(".slide:nth-of-type(1) li").click(function(){
     $('.slide:nth-of-type(1) li').removeClass('active');
 })
 
-
 $(window).on('load',init);
+
+
 
 
 
