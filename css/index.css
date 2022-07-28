@@ -1545,11 +1545,11 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 }
 
 .sub2 .sub2-3 {
-  margin: 12% auto;
+  margin: 10% auto;
 }
 
 .sub2 .sub2-3 .sub2-3-text {
-  margin: 0 auto;
+  margin: 10% auto;
   white-space: pre-line;
   margin-bottom: 3%;
   text-align: center;
@@ -1626,18 +1626,27 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
 
 .sub3 .sub3-1 {
   width: 65%;
-  padding: 22% 0 0;
   margin: 0 auto;
 }
 
 .sub3 .sub3-1 .sub3-1-text {
   margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.sub3 .sub3-1 .sub3-1-text h2 {
+  -webkit-animation: textAni 1s forwards alternate;
+          animation: textAni 1s forwards alternate;
 }
 
 .sub3 .sub3-1 .sub3-1-text p {
   white-space: pre-line;
   font-size: 32px;
   padding: 2% 0 8%;
+  -webkit-animation: textAni .5s forwards alternate;
+          animation: textAni .5s forwards alternate;
 }
 
 .sub3 .sub3-1 .sub3-1-DB {

@@ -907,9 +907,9 @@ main{
         }
     }
     .sub2-3{
-        margin: 12% auto;
+        margin: 10% auto;
         .sub2-3-text{
-            margin: 0 auto;
+            margin: 10% auto;
             white-space: pre-line;
             margin-bottom: 3%;
             text-align: center;
@@ -967,18 +967,22 @@ main{
     margin: 0 auto;
     .sub3-1{
         width: 65%;
-
-        padding: 22% 0 0;
         margin: 0 auto;
 
         .sub3-1-text{
             margin: 0 auto;
+            overflow: hidden;
+            transition: .5s;
+
+            h2{
+                animation: textAni 1s forwards alternate;
+            }
 
             p{
                 white-space: pre-line;
                 font-size: 32px;
                 padding: 2% 0 8%;
-
+                animation: textAni .5s forwards alternate;
             }
         }
         .sub3-1-DB{
