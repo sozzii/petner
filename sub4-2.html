@@ -50,9 +50,8 @@
                         <li>
                             <p>
                                 가격이 저렴해서 퀄리티가 걱정돼요.
-                                <span class="btn">
-                                    <img src="img/down.png">
-                                </span>
+                                <img src="./img/click_down.png">
+                                <img src="./img/click_up.png">
                             </p>
                             <div>펫트너 건강검진 패키지는 최고의 스탭과 최고의 장비로 최고 퀄리티의 건강검진을 제공하지만<br>
                                 건강 검진만을 전문으로 세팅된 병원이라 가격을 획기적으로 낮출 수 있었습니다.</div>
@@ -62,9 +61,8 @@
                         <li>
                             <p>
                                 보험 혜택을 받으려면 어떻게 하나요?
-                                <span class="btn">
-                                    <img src="./img/down.png">
-                                </span>
+                                <img src="./img/click_down.png">
+                                <img src="./img/click_up.png">
                             </p>
                             <div>치료비를 지출한 후, 관련 서류를 (주) 펫트너로 제출해주세요.</div>
                         </li>
@@ -72,9 +70,8 @@
                         <li>
                             <p>
                                 검진센터에서 진료나 수술도 가능한가요?
-                                <span class="btn">
-                                    <img src="./img/down.png">
-                                </span>
+                                <img src="./img/click_down.png">
+                                <img src="./img/click_up.png">
                             </p>
                             <div>펫트너 건강검진센터에서는 건강검진만 진행해요.<br>
                                 검진 후 치료를 받으실 경우, 건강검진 데이터를 원하시는 병원으로 보내드려요.</div>
@@ -83,9 +80,8 @@
                         <li>
                             <p>
                                 고양이도 건강검진이 가능한가요?
-                                <span class="btn">
-                                    <img src="./img/down.png">
-                                </span>
+                                <img src="./img/click_down.png">
+                                <img src="./img/click_up.png">
                             </p>
                             <div>고양이 고객님들을 위해 고양이 전문 동물병원과 함께 상품을 출시할 예정입니다.<br>
                                 열심히 해서 정말 좋은 상품으로 찾아뵐게요. 기대해 주세요!</div>
@@ -120,37 +116,62 @@
     </div>
 
 
-
-    <!-- 이미지 부분 클릭시 변경이 잘 이루어지지만 한번밖에 이루어지지 않고
-    여백 부분을 클릭하면 반응이 없다는 엄청난 단점이 있는데 해결을 못했습니다 ㅜㅜ-->
-
     <script>
 
-        const elEx2_li = document.querySelectorAll('.board ul li');
-        // li클릭시 class명 => active
+        // classList - >add(),remove(),toggle()
+        // const elEx2_li = document.querySelectorAll('.board ul li');
 
-        for(let i=0; i<elEx2_li.length; i++){
-            elEx2_li[i].addEventListener('click',function(){
-            console.log(i)
-            //    elEx2_li[0].classList.remove('active');
-            //    elEx2_li[1].classList.remove('active');
-            //    elEx2_li[2].classList.remove('active');
-            elEx2_li[i].classList.toggle('active');
+        // for(let i=0; i<elEx2_li.length; i++){
 
-            // classList - >add(),remove(),toggle()
-            });
-        }
-
-        if(elEx2_li[i].classList.contains('active')){
-            img.src = "img/up.png";
-        }
-        else{
-            img.src = "img/down.png";
-        }
-        
-        // function mouseDown(obj) { // 마우스 포인터가 요소안으로 들어올 때 (마우스 클릭시)
-        // obj.src = "./img/up.png";
         // }
+
+        // for(let i=0; i<elEx2_li.length; i++){
+                
+        //     elEx2_li[0].addEventListener('click',function(){
+        //        elEx2_li[1].classList.remove('active');
+        //        elEx2_li[2].classList.remove('active');
+        //        elEx2_li[3].classList.remove('active');
+        //        elEx2_li[0].classList.add('active');
+        //     });
+        //     elEx2_li[1].addEventListener('click',function(){
+        //        elEx2_li[2].classList.remove('active');
+        //        elEx2_li[3].classList.remove('active');
+        //        elEx2_li[0].classList.remove('active');
+        //        elEx2_li[1].classList.add('active');
+        //     });
+        //     elEx2_li[2].addEventListener('click',function(){
+        //        elEx2_li[1].classList.remove('active');
+        //        elEx2_li[3].classList.remove('active');
+        //        elEx2_li[0].classList.remove('active');
+        //        elEx2_li[2].classList.add('active');
+        //     });
+        //     elEx2_li[3].addEventListener('click',function(){
+        //        elEx2_li[0].classList.remove('active');
+        //        elEx2_li[2].classList.remove('active');
+        //        elEx2_li[1].classList.remove('active');
+        //        elEx2_li[3].classList.add('active');
+        //     });
+
+        //     elEx2_li[i].addEventListener('click',function(){
+        //         elEx2_li[i].classList.toggle('active');
+        //     });
+        // }
+
+
+        // if(elEx2_li[i].classList.contains('active')){
+        //     img.src = "";
+        // }
+        // else{
+        //     img.src = "img/down.png";
+        // }
+        
+
+        // 마우스 포인터가 요소안으로 들어올 때 (마우스 클릭시)
+        // function mouseDown(obj) { 
+        //     obj.src = "./img/click_up.png";
+        // }
+
+
 
     </script>
 
