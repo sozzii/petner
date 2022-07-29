@@ -1991,79 +1991,16 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   width: 100%;
 }
 
-.content-box01 {
-  width: 80%;
-  margin: 0px auto;
-}
-
-.button {
-  padding-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-/********** 소메뉴 : 알림, 문의 **********/
-/* 폰트사이즈 공통 20px */
-.button p {
-  color: #000;
-  font-size: 20px;
-}
-
-/* 해당 페이지 폰트컬러, 폰트웨이트 변경 */
-.button02 p {
-  color: #fff;
-  font-weight: bold;
-}
-
-/* 버튼 스타일 */
-.button01 {
-  width: 106px;
-  height: 40px;
-  margin: 100px 0px;
-  background-color: #F1F1F1;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.button02 {
-  width: 106px;
-  height: 40px;
-  margin: 100px 16px;
-  background-color: #0066FF;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* 게시판 */
+.board {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .board h1 {
   font-size: 70px;
   font-weight: bold;
   padding-bottom: 100px;
-}
-
-.board {
-  width: 100%;
-  margin: 30px auto;
 }
 
 .board ul {
@@ -2127,7 +2064,7 @@ main .s5 .s5-info .s5-button a:nth-of-type(2) {
   height: 512px;
   background-color: #FCFCFC;
   border-radius: 25px;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 
 .top {

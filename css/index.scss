@@ -1252,56 +1252,17 @@ main{
 }
 
 //sub4-2
-
 .box01{
     width: 100%;
-}
-.content-box01{
-    width: 80%;
-    margin: 0px auto;
-}
-.button{
-    padding-top: 100px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-/********** 소메뉴 : 알림, 문의 **********/
-
-/* 폰트사이즈 공통 20px */
-.button p{color: #000; font-size: 20px;}
-/* 해당 페이지 폰트컬러, 폰트웨이트 변경 */
-.button02 p{color: #fff; font-weight: bold;}
-
-/* 버튼 스타일 */
-.button01{
-    width: 106px; height: 40px;
-    margin: 100px 0px;
-    background-color: #F1F1F1;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.button02{
-    width: 106px; height: 40px;
-    margin: 100px 16px;
-    background-color: #0066FF;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+}   
 
 /* 게시판 */
-
+.board{width:80%; margin:0 auto ;}
 .board h1{
     font-size: 70px;
     font-weight: bold;
     padding-bottom: 100px;
 }
-
-.board{width: 100%; margin: 30px auto;}
 .board ul{
     list-style: none;
     padding: 0;
@@ -1320,7 +1281,6 @@ main{
     padding: 50px;
     display: none;
 }
-
 .board ul li.active div{display: block;}
 
 .board{
@@ -1337,13 +1297,14 @@ main{
 .board ul li p.on img:nth-of-type(2){ display: block;}
 
 
+
 /* 하단 문의 */
 .content02{
     width: 80%;
     height: 512px;
     background-color: #FCFCFC;
     border-radius: 25px;
-    margin: 100px auto;
+    margin: 200px auto;
 }
 .top{
     padding: 80px 0;
@@ -1355,13 +1316,9 @@ main{
     font-weight: bold;
     padding: 0 0 0 50px;
 }
-
-
 .icon-box{
     display: flex;
 }
-
-
 .icon01{
     display: flex;
     align-items: center;
@@ -1374,8 +1331,6 @@ main{
 .icon01 b{
     font-size: 40px;
 }
-
-
 .icon02{
     display: flex;
     align-items: center;
@@ -1388,13 +1343,11 @@ main{
 .icon02 b{
     font-size: 40px;
 }
-
 .bottom-txt p{
     font-size: 32px;
     color: #404040;
     padding: 0 0 0 50px;
 }
-
 
 //sub5 (reservation)
 .reserv{
