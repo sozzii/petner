@@ -1,7 +1,3 @@
-//header, footer 연결
-$('header').load('inc.html .head');
-$('footer').load('inc.html footer');
-
 
 //header scroll down > background-color변경
 function scroll() {
@@ -147,13 +143,18 @@ function topscroll() {
 $(window).on('load', topscroll);
 
 //sub2_accordion menu
-$(".sub2-1 .sub2-1-menu1").click(function () {
-    $(this).next(".sub2-1 .sub2-1-menu2").stop().slideToggle(400); // : 1개
-    $(this).toggleClass('on').siblings().removeClass('on');
-    $(this).next(".sub2-1 .sub2-1-menu2").siblings(".sub2-1 .sub2-1-menu2").slideUp(); // 1개는 닫히고, 1개는 펼쳐짐
+$(".sub2-1 .sub2-1-menu1").click(function() {
+    $(".sub2-1 .sub2-1-menu2").slideUp();
+    $(this).next().stop().slideToggle(400);
+    $(this).toggleClass('on');
 });
+// $(".sub2-1 .sub2-1-menu1").click(function() {
+//     $(this).next(".sub2-1 .sub2-1-menu2").stop().slideToggle(400); // : 1개
+//     $(this).toggleClass('on').siblings().removeClass('on');
+//     $(this).next(".sub2-1 .sub2-1-menu2").siblings(".sub2-1 .sub2-1-menu2").slideUp(); // 1개는 닫히고, 1개는 펼쳐짐
+// });
 
-$(".sub2-2-list").click(function () {
+$(".sub2-2-list").click(function() {
     alert('페이지 준비중입니다~!');
 });
 
@@ -187,8 +188,5 @@ $(".slide:nth-of-type(1) li").click(function(){
 })
 
 $(window).on('load',init);
-
-
-
 
 

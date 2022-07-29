@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>공지사항_문의</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/common.js"></script>
+
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--**헤더**-->
+    <header>
+    </header>
+
+    <!--**메인**-->
+    <main>
+        <div class="tab-menu">
+            <a href="sub4-1.html">알림</a>
+            <a href="sub4-2.html" class="active">문의</a>
+        </div>
+
+        <div class="content-box01" id="sub4_2">
+            <article class="board">
+                <h1> 자주묻는 질문</h1>
+                <ul>
+                    <li>
+                        <p>
+                            가격이 저렴해서 퀄리티가 걱정돼요.
+                            <span class="btn">
+                                <img src="./img/click_up.png">
+                                <img src="./img/click_down.png" class="clickDown">
+                            </span>
+                        </p>
+                        <div>펫트너 건강검진 패키지는 최고의 스탭과 최고의 장비로 최고 퀄리티의 건강검진을 제공하지만<br>
+                            건강 검진만을 전문으로 세팅된 병원이라 가격을 획기적으로 낮출 수 있었습니다.</div>
+                    </li>
+                    <!-- onmousedown="mouseDown(this)" -->
+
+                    <li>
+                        <p>
+                            보험 혜택을 받으려면 어떻게 하나요?
+                            <span class="btn">
+                                <img src="./img/click_up.png">
+                            </span>
+                        </p>
+                        <div>치료비를 지출한 후, 관련 서류를 (주) 펫트너로 제출해주세요.</div>
+                    </li>
+
+                    <li>
+                        <p>
+                            검진센터에서 진료나 수술도 가능한가요?
+                            <span class="btn">
+                                <img src="./img/click_up.png">
+                            </span>
+                        </p>
+                        <div>펫트너 건강검진센터에서는 건강검진만 진행해요.<br>
+                            검진 후 치료를 받으실 경우, 건강검진 데이터를 원하시는 병원으로 보내드려요.</div>
+                    </li>
+
+                    <li>
+                        <p>
+                            고양이도 건강검진이 가능한가요?
+                            <span class="btn">
+                                <img src="./img/click_up.png">
+                            </span>
+                        </p>
+                        <div>고양이 고객님들을 위해 고양이 전문 동물병원과 함께 상품을 출시할 예정입니다.<br>
+                            열심히 해서 정말 좋은 상품으로 찾아뵐게요. 기대해 주세요!</div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="content02">
+            <div class="top">
+                <h2> 더 궁금한 점이 있으신가요? </h2>
+            </div>
+            <div class="icon-box">
+                <div class="icon01">
+                    <img src="./img/call.png">
+                    <p> 전화문의 <br> <b> 02 - 477 - 7887 </b> </p>
+
+                </div>
+                <div class="icon02">
+                    <img src="./img/mes.png">
+                    <p> 카톡문의 <br> <b> @펫트너 </b> </p>
+                </div>
+            </div>
+            <div class="bottom-txt">
+                <p> 월 ~ 토 10:00~19:00 (점심시간 13:00 ~ 14:00) </p>
+            </div>
+        </div>
+        <script>
+            // li클릭시 class명 => active
+            const elEx2_li = document.querySelectorAll('.board ul li');
+
+            // for(let i=0; i<elEx2_li.length; i++){
+            //     elEx2_li[i].addEventListener('click',function(){
+            //        elEx2_li[0].classList.remove('active');
+            //        elEx2_li[1].classList.remove('active');
+            //        elEx2_li[i].classList.remove('active');
+            //         elEx2_li[i].classList.toggle('active');
+
+            //     classList - >add(),remove(),toggle()
+            //     });
+            // }
+
+            for (let i = 0; i < elEx2_li.length; i++) {
+                elEx2_li[0].addEventListener('click', function () {
+                    elEx2_li[1].classList.remove('active');
+                    elEx2_li[2].classList.remove('active');
+                    elEx2_li[3].classList.remove('active');
+                    elEx2_li[0].classList.add('active');
+                });
+                elEx2_li[1].addEventListener('click', function () {
+                    elEx2_li[2].classList.remove('active');
+                    elEx2_li[3].classList.remove('active');
+                    elEx2_li[0].classList.remove('active');
+                    elEx2_li[1].classList.add('active');
+                });
+                elEx2_li[2].addEventListener('click', function () {
+                    elEx2_li[1].classList.remove('active');
+                    elEx2_li[3].classList.remove('active');
+                    elEx2_li[0].classList.remove('active');
+                    elEx2_li[2].classList.add('active');
+                });
+                elEx2_li[3].addEventListener('click', function () {
+                    elEx2_li[0].classList.remove('active');
+                    elEx2_li[2].classList.remove('active');
+                    elEx2_li[1].classList.remove('active');
+                    elEx2_li[3].classList.add('active');
+                });
+                if (elEx2_li[1].classList.contains('active')) {
+                    img.src = "img/click_down.png";
+                }
+                else {
+                    img.src = "img/click_down.png";
+                }
+            }
+
+                // function mouseDown(obj) { // 마우스 포인터가 요소안으로 들어올 때 (마우스 클릭시)
+                // obj.src = "./img/up.png";
+                // }
+        </script>
+
+    </main>
+
+    <!--**푸터**-->
+    <footer>
+    </footer>
+
+</body>
+
+</html>
