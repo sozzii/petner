@@ -1,0 +1,127 @@
+.slide{
+    position: relative;            
+}
+
+.slide:nth-of-type(2) .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+.slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
+    /* transform: translate(0,500px); */
+    /* height: 750px; */
+}
+
+.slide:nth-of-type(1){
+    overflow: hidden;
+    margin: 24% 0;
+    margin-left: 3%;
+}
+.slide:nth-of-type(1) .slick-list{
+    overflow: hidden;
+    padding: 0 !important;
+}
+.slide:nth-of-type(1) .slick-track.active{
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+    
+}
+.slide:nth-of-type(1) li{
+    transform: translateY(70%);
+    font-size: 25px;
+    color: #939393;
+    font-size: 25px;
+    line-height: 3.5rem;
+    text-align: left;
+
+}
+.slide:nth-of-type(1) li.active{
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+}
+.slick-center{
+    font-weight: bold;
+    font-size: 30px !important;
+    color: #000 !important;
+}
+
+/* .slide .slick-track::after{
+   content:'';
+   display:block;
+   clear: both;
+} */
+
+.slide:nth-of-type(2) .slick-slide{
+    /* 개별 배너 */ 
+    margin:0; 
+    width:100%;
+    float:left;
+
+}
+
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:0%; top:50%;
+    z-index: 2;
+    border: none;
+    font-size: 0;
+    background: rgba(255,255,255,0);
+}
+.slide .slick-prev::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Arrow\ circle\ up1.png);
+    position: absolute;
+    left:-205px; top:-325px;
+    z-index: 2;
+}
+.slide .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: 2;
+
+    border: none;
+    font-size: 0;
+    background: rgba(255,255,255,0);
+}
+.slide .slick-next::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Arrow\ circle\ up2.png);
+    position: absolute;
+    left:-570px; bottom:-365px;
+    z-index: 2;
+}
+
+/* dots */
+.slide .slick-dots{
+    position: absolute;
+    left:0; bottom:5%;
+    width:100%;
+    text-align: center;
+
+    list-style-type: none;
+    padding:0;
+}
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width:15px; height:15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    border:none;
+    font-size:0;
+    margin:0 10px;
+}
+.slide .slick-dots li.slick-active button{
+    background-color: #f00;
+}

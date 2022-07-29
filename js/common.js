@@ -75,6 +75,7 @@ function init(){
         }
     });
 
+<<<<<<< HEAD
     // $(".button01").click(function(){
     //     $(".button02").addClass('remove');
     //     $(".button01").addClass('active');
@@ -94,8 +95,50 @@ function init(){
         $(this).next().stop().slideToggle(400);
         $(this).toggleClass('on');
     });
+=======
+    //sub4_tap menu
+    $(".button01").click(function(){
+        $(".button02").addClass('remove');
+        $(".button01").addClass('active');
+        $(".button02 p").addClass('remove');
+        $(".button01 p").addClass('active');
+    })
+    $(".button02").click(function(){
+        $(".button01").addClass('remove');
+        $(".button02").addClass('active');
+        $(".button01 p").addClass('remove');
+        $(".button02 p").addClass('active');
+    })
+
+    //sub3_slide_slick
+    $(".slide:nth-of-type(1)").slick({
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows:false,
+        dots: false,
+        asNavFor: '.slide:nth-of-type(2)',
+        focusOnSelect:true,
+        centerMode: true,
+        infinite:true,
+        draggable:true,
+        initialSlide : 2
+    });
+    $(".slide:nth-of-type(2)").slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slide:nth-of-type(1)',
+        fade: true,
+        initialSlide : 2
+    });
+    $(".slide:nth-of-type(1) li").click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.slide:nth-of-type(1) li').removeClass('active');
+    })
+>>>>>>> 67b2aa96be95866a4bdc2687063ddd1d784ba4b9
 
 }
-
 
 $(window).on('load',init);

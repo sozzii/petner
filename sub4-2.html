@@ -118,11 +118,66 @@
 
     <script>
 
+<<<<<<< HEAD
         // classList - >add(),remove(),toggle()
         // const elEx2_li = document.querySelectorAll('.board ul li');
 
         // for(let i=0; i<elEx2_li.length; i++){
 
+=======
+        // li클릭시 class명 => active
+        const elEx2_li = document.querySelectorAll('.board ul li');
+
+        // for(let i=0; i<elEx2_li.length; i++){
+        //     elEx2_li[i].addEventListener('click',function(){
+        //        elEx2_li[0].classList.remove('active');
+        //        elEx2_li[1].classList.remove('active');
+        //        elEx2_li[i].classList.remove('active');
+        //         elEx2_li[i].classList.toggle('active');
+
+        //     classList - >add(),remove(),toggle()
+        //     });
+        // }
+
+            for(let i=0; i<elEx2_li.length; i++){
+                
+            }
+
+            elEx2_li[0].addEventListener('click',function(){
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.add('active');
+            });
+            elEx2_li[1].addEventListener('click',function(){
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[1].classList.add('active');
+            });
+            elEx2_li[2].addEventListener('click',function(){
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[3].classList.remove('active');
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[2].classList.add('active');
+            });
+            elEx2_li[3].addEventListener('click',function(){
+               elEx2_li[0].classList.remove('active');
+               elEx2_li[2].classList.remove('active');
+               elEx2_li[1].classList.remove('active');
+               elEx2_li[3].classList.add('active');
+            });
+
+        if(elEx2_li[1].classList.contains('active')){
+            img.src = "img/up.png";
+        }
+        else{
+            img.src = "img/down.png";
+        }
+        
+        // function mouseDown(obj) { // 마우스 포인터가 요소안으로 들어올 때 (마우스 클릭시)
+        // obj.src = "./img/up.png";
+>>>>>>> 67b2aa96be95866a4bdc2687063ddd1d784ba4b9
         // }
 
         // for(let i=0; i<elEx2_li.length; i++){
